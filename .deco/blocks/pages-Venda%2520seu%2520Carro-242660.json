@@ -102,6 +102,21 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/image-with-paragraph.tsx",
+        "description": "Você não precisa tricar de ferramenta ou integrador. Nós fazemos o trabalho pesado e entregamos leads quentinhos no seu site, CRM e Whatsapp",
+        "title": "A Leadfy se integra às soluções mais usadas no mercado.",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/884bbb65-6b81-481d-b9b2-0453ac9d6391/Captura-de-tela-2024-10-01-171253.png",
+        "cta": [
+          {
+            "text": "Faça um teste Grátis",
+            "href": "/"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "website/sections/Analytics/Analytics.tsx"
       }
     },
