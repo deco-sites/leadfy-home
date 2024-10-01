@@ -6,38 +6,40 @@ import * as $$$$$$$$$0 from "./actions/createAirtableRecord.ts";
 import * as $$$$$$$$$1 from "./actions/createCompleteAirtableRecord.ts";
 import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$10 from "./sections/blog.tsx";
 import * as $$$$$$0 from "./sections/FAQ.tsx";
-import * as $$$$$$10 from "./sections/features-leadfy.tsx";
+import * as $$$$$$11 from "./sections/features-leadfy.tsx";
 import * as $$$$$$1 from "./sections/Footer.tsx";
 import * as $$$$$$2 from "./sections/Header.tsx";
-import * as $$$$$$11 from "./sections/hero-leadfy.tsx";
+import * as $$$$$$12 from "./sections/hero-leadfy.tsx";
 import * as $$$$$$3 from "./sections/HeroLeadCapture.tsx";
-import * as $$$$$$12 from "./sections/image-with-paragraph.tsx";
+import * as $$$$$$13 from "./sections/image-with-paragraph.tsx";
 import * as $$$$$$4 from "./sections/ItWorks.tsx";
 import * as $$$$$$5 from "./sections/LeadCapture.tsx";
 import * as $$$$$$6 from "./sections/Maps.tsx";
 import * as $$$$$$7 from "./sections/OurDifferences.tsx";
-import * as $$$$$$13 from "./sections/planos.tsx";
+import * as $$$$$$14 from "./sections/planos.tsx";
 import * as $$$$$$8 from "./sections/Steps.tsx";
-import * as $$$$$$14 from "./sections/testimonials.tsx";
+import * as $$$$$$15 from "./sections/testimonials.tsx";
 import * as $$$$$$9 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
+    "site/sections/blog.tsx": $$$$$$10,
     "site/sections/FAQ.tsx": $$$$$$0,
-    "site/sections/features-leadfy.tsx": $$$$$$10,
+    "site/sections/features-leadfy.tsx": $$$$$$11,
     "site/sections/Footer.tsx": $$$$$$1,
     "site/sections/Header.tsx": $$$$$$2,
-    "site/sections/hero-leadfy.tsx": $$$$$$11,
+    "site/sections/hero-leadfy.tsx": $$$$$$12,
     "site/sections/HeroLeadCapture.tsx": $$$$$$3,
-    "site/sections/image-with-paragraph.tsx": $$$$$$12,
+    "site/sections/image-with-paragraph.tsx": $$$$$$13,
     "site/sections/ItWorks.tsx": $$$$$$4,
     "site/sections/LeadCapture.tsx": $$$$$$5,
     "site/sections/Maps.tsx": $$$$$$6,
     "site/sections/OurDifferences.tsx": $$$$$$7,
-    "site/sections/planos.tsx": $$$$$$13,
+    "site/sections/planos.tsx": $$$$$$14,
     "site/sections/Steps.tsx": $$$$$$8,
-    "site/sections/testimonials.tsx": $$$$$$14,
+    "site/sections/testimonials.tsx": $$$$$$15,
     "site/sections/Theme/Theme.tsx": $$$$$$9,
   },
   "actions": {
