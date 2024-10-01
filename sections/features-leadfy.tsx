@@ -70,15 +70,15 @@ export default function HeroSection({
 
       <main class="container mx-auto px-4 py-16">
         <div class="flex flex-col lg:flex-row items-center justify-between">
-          <div class="lg:w-1/2 mb-8 lg:mb-0">
+          <div class="lg:w-1/2 mb-8 lg:mb-0 order-2 lg:order-1">
+            <img src={infinityLoopImage} alt="Infinity Loop" class="w-full" />
+          </div>
+          <div class="lg:w-1/2 order-1 lg:order-2">
             <h1 class="text-4xl font-bold mb-6" dangerouslySetInnerHTML={{ __html: mainTitle }}></h1>
             <p class="text-xl mb-8">{subtitle}</p>
             <a href={buttonUrl} class="bg-yellow-300 text-black font-semibold py-3 px-8 rounded-full inline-block hover:bg-yellow-400 transition-colors">
               {buttonText}
             </a>
-          </div>
-          <div class="lg:w-1/2">
-            <img src={infinityLoopImage} alt="Infinity Loop" class="w-full" />
           </div>
         </div>
       </main>

@@ -88,7 +88,9 @@
             "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/5543d561-ec28-40fd-8e4d-cce4ff4cbcd5/message-add.png"
           }
         ],
-        "buttonHref": "https://wa.me/5561982214588"
+        "buttonHref": "https://wa.me/5561982214588",
+        "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/45850fbb-c575-4505-9303-ea1e4bda3cb4/Captura-de-tela-2024-10-01-152951.png",
+        "infinityLoopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/45850fbb-c575-4505-9303-ea1e4bda3cb4/Captura-de-tela-2024-10-01-152951.png"
       }
     },
     {
