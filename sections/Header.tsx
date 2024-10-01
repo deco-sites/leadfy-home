@@ -1,79 +1,145 @@
-import { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import { useScript } from "deco/hooks/useScript.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
+import Icon from "site/components/ui/Icon.tsx";
+
+interface Logo {
+  image?: ImageWidget;
+  alt?: string;
+  width?: number;
+  height?: number;
+}
+
+interface CTA {
+  href?: string;
+  text?: string;
+  /** @description Abrir o link em uma nova guia */
+  openInNewTab?: boolean;
+}
+
+interface NavItem {
+  label?: string;
+  href?: string;
+  /** @description Abrir o link em uma nova guia */
+  openInNewTab?: boolean;
+}
 
 interface Props {
+  logo?: Logo;
+  navItems?: NavItem[];
+  cta?: CTA;
   /**
-   * @title Title
-   * @format rich-text
+   * @description Background color for the header
+   * @format color-input
    */
-  title: HTMLWidget;
-  /**
-   * @title Subtitle
-   * @format textarea
-   */
-  subtitle: string;
-  /**
-   * @title Button Text
-   */
-  buttonText: string;
-  /**
-   * @title Button URL
-   */
-  buttonHref: string;
-  /**
-   * @title Trust Message
-   * @format textarea
-   */
-  trustText: string;
-  /**
-   * @title Dashboard Image
-   */
-  dashboardImage: ImageWidget;
-  /**
-   * @title Brand Logos
-   */
-  brandLogos: ImageWidget[];
+  backgroundColor?: string;
 }
 
-export default function HeroLeadfy({
-  title = "<h1>Nós trazemos os clientes,<br>você <u>fecha mais vendas</u></h1>",
-  subtitle = "Turbinamos seu negócio atraindo e atendendo leads qualificados todo dia, toda hora",
-  buttonText = "Faça um teste grátis",
-  buttonHref = "#",
-  trustText = "Grandes marcas que confiam em nossa tecnologia",
-  dashboardImage = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/6fe9404a-f69c-472a-b521-78f6c1f87326",
-  brandLogos = [],
-}: Props) {
+const script = () => {
+  // Make the header sticky on scroll
+  const header = document.getElementById("header");
+  if (header) {
+    globalThis.onscroll = function () {
+      if (globalThis.scrollY > 0) {
+        const headerHeight = header.offsetHeight;
+
+        header.classList.add("fixed");
+        header.style.boxShadow = "0 0 36px rgba(0, 0, 0, 0.5)";
+        document.body.style.paddingTop = `${headerHeight}px`;
+      } else {
+        header.classList.remove("fixed");
+        document.body.style.paddingTop = "0";
+        header.style.boxShadow = "none";
+      }
+    };
+  }
+};
+
+function Header({ logo, navItems, cta, backgroundColor = "#ffffff" }: Props) {
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex flex-col lg:flex-row items-center justify-between">
-          <div className="lg:w-1/2 lg:pr-8 mb-12 lg:mb-0">
-            <div className="text-left">
-              <div className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-6" dangerouslySetInnerHTML={{ __html: title }}></div>
-              <p className="text-xl mb-8 text-gray-600">{subtitle}</p>
+    <>
+      <header id="header" class="top-0 left-0 w-full z-50" style={{ backgroundColor }}>
+        <div class="w-full mx-auto px-4 max-w-[1140px] py-4 flex items-center justify-between">
+          <a
+            href="/"
+            class="flex flex-row gap-1 items-center justify-center text-xs"
+          >
+            {logo && (
+              <Image
+                src={logo.image || ""}
+                alt={logo.alt || ""}
+                height={logo.height || 20}
+                width={logo.width || 50}
+              />
+            )}
+          </a>
+
+          <div class="w-full flex justify-end items-center gap-10">
+            {navItems && (
+              <>
+                <nav class="hidden md:flex flex-row gap-4 items-center justify-center text-base font-semibold">
+                  {navItems.map((item) => (
+                    <a
+                      href={item.href || ""}
+                      target={item.openInNewTab ? "_blank" : "_self"}
+                      class="hover:text-primary transition-colors duration-300"
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </nav>
+                <div className="dropdown dropdown-end md:hidden">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="bg-primary text-primary-content flex items-center justify-center w-8 h-8"
+                  >
+                    <Icon
+                      class="shrink-0"
+                      id="Bars3"
+                      width={24}
+                      height={24}
+                      strokeWidth={1}
+                    />
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+                  >
+                    {navItems.map((item) => (
+                      <li>
+                        <a
+                          target={item.openInNewTab ? "_blank" : "_self"}
+                          href={item.href || ""}
+                          class="hover:text-primary"
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </>
+            )}
+
+            {cta && (
               <a
-                href={buttonHref}
-                className="inline-block px-8 py-3 text-black font-semibold rounded-full transition-colors duration-300 bg-yellow-300 hover:bg-yellow-400 shadow-md"
+                href={cta.href || ""}
+                target={cta.openInNewTab ? "_blank" : "_self"}
+                class="hidden md:inline-flex btn btn-sm btn-primary h-10 text-base font-medium"
               >
-                {buttonText}
+                {cta.text}
               </a>
-            </div>
-          </div>
-          <div className="lg:w-1/2">
-            <img src={dashboardImage} alt="Dashboard" className="w-full" />
+            )}
           </div>
         </div>
-      </div>
-      <div className="bg-gray-100 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-500 mb-8">{trustText}</p>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            {brandLogos.map((logo, index) => (
-              <img key={index} src={logo} alt={`Brand Logo ${index + 1}`} className="h-12 w-auto grayscale" />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
+      </header>
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(script) }}
+      />
+    </>
   );
 }
+
+export default Header;
