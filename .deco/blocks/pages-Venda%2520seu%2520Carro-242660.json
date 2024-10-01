@@ -102,6 +102,38 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/testimonials.tsx",
+        "testimonials": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/c46c51b8-56e2-437a-a616-5ebedc08c930/Captura-de-tela-2024-10-01-172456.png",
+            "name": "Yuri Gitahy",
+            "company": "Garage 88",
+            "testimonial": "“A Leadfy trouxe 1000 leads qualificados em um ano, aumentando nossas vendas online entre 30% e 40%. Hoje, 55% do nosso faturamento vem do digital e vamos aumentar nossa aposta.”"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/c46c51b8-56e2-437a-a616-5ebedc08c930/Captura-de-tela-2024-10-01-172456.png",
+            "name": "Yuri Gitahy",
+            "company": "Garage 88",
+            "testimonial": "“A Leadfy trouxe 1000 leads qualificados em um ano, aumentando nossas vendas online entre 30% e 40%. Hoje, 55% do nosso faturamento vem do digital e vamos aumentar nossa aposta.”"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/c46c51b8-56e2-437a-a616-5ebedc08c930/Captura-de-tela-2024-10-01-172456.png",
+            "name": "Yuri Gitahy",
+            "company": "Garage 88",
+            "testimonial": "“A Leadfy trouxe 1000 leads qualificados em um ano, aumentando nossas vendas online entre 30% e 40%. Hoje, 55% do nosso faturamento vem do digital e vamos aumentar nossa aposta.”"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/c46c51b8-56e2-437a-a616-5ebedc08c930/Captura-de-tela-2024-10-01-172456.png",
+            "name": "Yuri Gitahy",
+            "company": "Garage 88",
+            "testimonial": "“A Leadfy trouxe 1000 leads qualificados em um ano, aumentando nossas vendas online entre 30% e 40%. Hoje, 55% do nosso faturamento vem do digital e vamos aumentar nossa aposta.”"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/image-with-paragraph.tsx",
         "description": "Você não precisa tricar de ferramenta ou integrador. Nós fazemos o trabalho pesado e entregamos leads quentinhos no seu site, CRM e Whatsapp",
         "title": "A Leadfy se integra às soluções mais usadas no mercado.",
