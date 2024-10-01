@@ -70,22 +70,24 @@ export default function HeroLeadfy({
 }: Props) {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <div className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-6" dangerouslySetInnerHTML={{ __html: title }}></div>
-          <div className="text-xl mb-8 text-gray-600">{subtitle}</div>
-          <a
-            href={buttonHref}
-            className="inline-block px-8 py-3 text-black font-semibold rounded-full transition-colors duration-300 bg-yellow-300 hover:bg-yellow-400 shadow-md"
-          >
-            {buttonText}
-          </a>
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div className="lg:w-1/2 lg:pr-8 mb-12 lg:mb-0">
+          <div className="text-left">
+            <div className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-6" dangerouslySetInnerHTML={{ __html: title }}></div>
+            <div className="text-xl mb-8 text-gray-600">{subtitle}</div>
+            <a
+              href={buttonHref}
+              className="inline-block px-8 py-3 text-black font-semibold rounded-full transition-colors duration-300 bg-yellow-300 hover:bg-yellow-400 shadow-md"
+            >
+              {buttonText}
+            </a>
+          </div>
         </div>
-        <div className="mt-12 flex justify-center">
-          <img src={dashboardImage} alt="Dashboard" className="w-full max-w-4xl rounded-lg shadow-2xl" />
+        <div className="lg:w-1/2">
+          <img src={dashboardImage} alt="Dashboard" className="w-full" />
         </div>
-        <div className="mt-16">
-          <div className="text-center text-gray-500 mb-6">{trustText}</div>
+        <div className="w-full mt-16">
+          <div className="text-center text-gray-500 mb-6 lg:mt-8">{trustText}</div>
           <div className="flex flex-wrap justify-center items-center gap-8">
             <img src={logo1} alt="Logo 1" className="h-8 w-auto grayscale" />
             <img src={logo2} alt="Logo 2" className="h-8 w-auto grayscale" />
