@@ -5,28 +5,31 @@
       "__resolveType": "site/sections/Header.tsx",
       "logo": {
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/2d69bd9f-53f8-4f9e-b207-c6215865c098/leadfy_black.png",
-        "alt": "Garagecar Veículos",
+        "alt": "Leadfy",
         "width": 179,
         "height": 80
       },
       "navItems": [
         {
-          "label": "Quero Comprar",
-          "href": "https://garagecar.net/",
+          "label": "Soluções",
           "openInNewTab": true
         },
         {
-          "label": "Perguntas Frequentes",
+          "label": "Planos",
           "href": "#faq"
         },
         {
-          "label": "Unidades",
+          "label": "Automação de Leads",
           "href": "#unidades"
-        }
+        },
+        {
+          "label": "Quem somos"
+        },
+        {}
       ],
       "cta": {
         "href": "#contato",
-        "text": "Solicite uma Avaliação"
+        "text": "Contato"
       },
       "backgroundColor": "#daff01"
     },
