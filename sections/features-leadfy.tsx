@@ -2,12 +2,7 @@ import { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 
 interface Props {
   /**
-   * @title Logo
-   */
-  logo: ImageWidget;
-  /**
    * @title Navigation Items
-   * @format rich-text
    */
   navItems: HTMLWidget;
   /**
@@ -44,8 +39,6 @@ interface Props {
 }
 
 export default function HeroSection({
-  logo = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-  navItems = "<ul><li>Soluções</li><li>Planos</li><li>Automação de Leads</li><li>Quem somos</li><li>Contato</li></ul>",
   mainTitle = "A Leadfy <span class='bg-yellow-300'>complementa</span> sua estratégia de marketing e vendas na <span class='bg-yellow-300'>nova jornada</span> digital de compra",
   subtitle = "Nossa tecnologia aumenta seu faturamento, atende seu cliente e amplia seu branding (com um investimento menor que você imagina)",
   buttonText = "Clique pra saber mais",
@@ -61,12 +54,6 @@ export default function HeroSection({
 }: Props) {
   return (
     <div class="bg-white">
-      <header class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <img src={logo} alt="Leadfy Logo" class="h-8" />
-        <nav>
-          <ul class="flex space-x-6" dangerouslySetInnerHTML={{ __html: navItems }}></ul>
-        </nav>
-      </header>
 
       <main class="container mx-auto px-4 py-16">
         <div class="flex flex-col lg:flex-row items-center justify-between">
