@@ -12,6 +12,7 @@ import * as $$$$$$1 from "./sections/Footer.tsx";
 import * as $$$$$$2 from "./sections/Header.tsx";
 import * as $$$$$$11 from "./sections/hero-leadfy.tsx";
 import * as $$$$$$3 from "./sections/HeroLeadCapture.tsx";
+import * as $$$$$$12 from "./sections/image-with-paragraph.tsx";
 import * as $$$$$$4 from "./sections/ItWorks.tsx";
 import * as $$$$$$5 from "./sections/LeadCapture.tsx";
 import * as $$$$$$6 from "./sections/Maps.tsx";
@@ -27,6 +28,7 @@ const manifest = {
     "site/sections/Header.tsx": $$$$$$2,
     "site/sections/hero-leadfy.tsx": $$$$$$11,
     "site/sections/HeroLeadCapture.tsx": $$$$$$3,
+    "site/sections/image-with-paragraph.tsx": $$$$$$12,
     "site/sections/ItWorks.tsx": $$$$$$4,
     "site/sections/LeadCapture.tsx": $$$$$$5,
     "site/sections/Maps.tsx": $$$$$$6,
