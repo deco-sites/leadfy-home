@@ -111,7 +111,10 @@
             "text": "Faça um teste Grátis",
             "href": "/"
           }
-        ]
+        ],
+        "backgroundColor": "#ffffff",
+        "ctaText": "Teste Grátis",
+        "ctaHref": "/"
       }
     },
     {
