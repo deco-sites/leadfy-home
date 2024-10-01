@@ -19,6 +19,14 @@ interface Props {
    */
   textColor?: string;
   /**
+   * @format color-input
+   */
+  ctaBackgroundColor?: string;
+  /**
+   * @format color-input
+   */
+  ctaTextColor?: string;
+  /**
    * @format textarea
    */
   ctaText?: string;
@@ -34,6 +42,8 @@ export default function ImageTextSection({
   image = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/6fe9404a-f69c-472a-b521-78f6c1f87326",
   backgroundColor = "#ffffff",
   textColor = "#000000",
+  ctaBackgroundColor = "#3b82f6",
+  ctaTextColor = "#ffffff",
   ctaText = "Learn More",
   ctaHref = "#"
 }: Props) {
@@ -43,7 +53,7 @@ export default function ImageTextSection({
         <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
           <h2 class="text-3xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: title }} />
           <p class="text-lg" dangerouslySetInnerHTML={{ __html: description }} />
-          <a href={ctaHref} class="inline-block mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">
+          <a href={ctaHref} style={{ backgroundColor: ctaBackgroundColor, color: ctaTextColor }} class="inline-block mt-4 px-6 py-2 font-semibold rounded-full hover:opacity-90 transition-opacity duration-300">
             {ctaText}
           </a>
         </div>
