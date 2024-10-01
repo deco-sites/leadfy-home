@@ -1,0 +1,101 @@
+{
+  "name": "Leadfy-Home",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Header.tsx",
+      "logo": {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/2d69bd9f-53f8-4f9e-b207-c6215865c098/leadfy_black.png",
+        "alt": "Garagecar Veículos",
+        "width": 179,
+        "height": 80
+      },
+      "navItems": [
+        {
+          "label": "Quero Comprar",
+          "href": "https://garagecar.net/",
+          "openInNewTab": true
+        },
+        {
+          "label": "Perguntas Frequentes",
+          "href": "#faq"
+        },
+        {
+          "label": "Unidades",
+          "href": "#unidades"
+        }
+      ],
+      "cta": {
+        "href": "#contato",
+        "text": "Solicite uma Avaliação"
+      },
+      "backgroundColor": "#daff01"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/hero-leadfy.tsx",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/e0616e9c-f18b-4c72-bc0a-1a85a6e601b7/Captura-de-tela-2024-10-01-152951.png",
+        "buttonHref": "https://wa.me/5561982214588",
+        "buttonText": "Faça um teste grátis",
+        "highlightColor": "#a40a0a",
+        "subtitle": "Turbinamos seu negócio atraindo e atendendo leads qualificados todo dia, toda hora",
+        "title": "<p></p>",
+        "logo1": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/251ddb99-df4e-4a3c-bce5-243a8486aaa8/baixados-(4).png",
+        "logo2": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/4216ac0d-3d1a-4c25-8dff-63d722f5bc89/banco-brb-1.svg",
+        "logo3": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/c05ee7c3-b73d-4051-84f1-c9a94e7913c7/Logo-Gradiente.png",
+        "logo4": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/0e3bba17-817a-4ec4-9d45-9e8ba4269174/images-(1).png",
+        "logo5": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/349ce1d4-488f-44e6-bd62-7ff1c71b632f/baixados-(3).jpeg",
+        "logo6": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/1af0ea70-b3a1-4957-87e5-e67d53ac3a0c/images-(2).png"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/features-leadfy.tsx",
+        "buttonText": "Fale com Especialista",
+        "features": [
+          {
+            "title": "Economize tempo e trabalho",
+            "description": "Atualizamos seus anúncios com seu estoque em tempo real",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/38af45ae-5416-4e55-b818-1e2a860fef7b/clock.png"
+          },
+          {
+            "title": "Otimize seus resultados",
+            "description": "Melhoramos a performance das suas campanhas de aquisição e remarketing",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/6c168644-eade-42c6-814f-f37bca1292dc/filter-add.png"
+          },
+          {
+            "title": "Seja mais competitivo",
+            "description": "Traga as estratégias dos grandes portais para o site do seu negócio",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/1e6eaf20-f904-44ff-8ffe-4ec42d48f5f6/cup.png"
+          },
+          {
+            "title": "Venda fora do horário comercial",
+            "description": "Nosso módulo de atendimento 24×7 não deixa você perder nenhum cliente",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/5543d561-ec28-40fd-8e4d-cce4ff4cbcd5/message-add.png"
+          }
+        ],
+        "buttonHref": "https://wa.me/5561982214588"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Analytics/Analytics.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Footer.tsx",
+        "href": "/",
+        "text": "© 2024. GarageCar. Todos os Direitos Reservados.",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12381/b867dd6e-e585-42f9-be4e-d7c489e31976",
+        "alt": "GarageCar Veiculos",
+        "width": 64,
+        "height": 64
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
