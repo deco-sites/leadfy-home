@@ -1,91 +1,98 @@
-import { ImageWidget } from "apps/admin/widgets.ts";
-
-interface Feature {
-  icon: ImageWidget;
-  title: string;
-  description: string;
-}
+import { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 
 interface Props {
   /**
+   * @title Logo
+   */
+  logo: ImageWidget;
+  /**
+   * @title Navigation Items
    * @format rich-text
    */
-  mainTitle?: string;
+  navItems: HTMLWidget;
   /**
+   * @title Main Title
+   * @format rich-text
+   */
+  mainTitle: HTMLWidget;
+  /**
+   * @title Subtitle
    * @format textarea
    */
-  subtitle?: string;
+  subtitle: string;
   /**
-   * @format color-input
+   * @title Button Text
    */
-  highlightColor?: string;
-  features?: Feature[];
+  buttonText: string;
   /**
+   * @title Button URL
+   */
+  buttonUrl: string;
+  /**
+   * @title Infinity Loop Image
+   */
+  infinityLoopImage: ImageWidget;
+  /**
+   * @title Trust Message
    * @format textarea
    */
-  buttonText?: string;
+  trustMessage: string;
   /**
-   * @description The URL to redirect when the button is clicked
+   * @title Partner Logos
    */
-  buttonHref?: string;
+  partnerLogos: ImageWidget[];
 }
 
-export default function FeaturesLeadfy({
-  mainTitle = "Foque no que realmente importa: suas vendas",
-  subtitle = "A Leadfy traz os melhores leads e aumenta sua visibilidade no mercado.",
-  highlightColor = "#c6f551",
-  features = [
-    {
-      icon: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-      title: "Economize tempo e trabalho",
-      description: "Atualizamos seus anúncios com seu estoque em tempo real"
-    },
-    {
-      icon: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-      title: "Otimize seus resultados",
-      description: "Melhoramos a performance das suas campanhas de aquisição e remarketing"
-    },
-    {
-      icon: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-      title: "Seja mais competitivo",
-      description: "Traga as estratégias dos grandes portais para o site do seu negócio"
-    },
-    {
-      icon: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-      title: "Venda fora do horário comercial",
-      description: "Nosso módulo de atendimento 24×7 não deixa você perder nenhum cliente"
-    }
+export default function HeroSection({
+  logo = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+  navItems = "<ul><li>Soluções</li><li>Planos</li><li>Automação de Leads</li><li>Quem somos</li><li>Contato</li></ul>",
+  mainTitle = "A Leadfy <span class='bg-yellow-300'>complementa</span> sua estratégia de marketing e vendas na <span class='bg-yellow-300'>nova jornada</span> digital de compra",
+  subtitle = "Nossa tecnologia aumenta seu faturamento, atende seu cliente e amplia seu branding (com um investimento menor que você imagina)",
+  buttonText = "Clique pra saber mais",
+  buttonUrl = "#",
+  infinityLoopImage = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/6fe9404a-f69c-472a-b521-78f6c1f87326",
+  trustMessage = "Certificados pelas maiores plataformas de mídias digitais",
+  partnerLogos = [
+    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e"
   ],
-  buttonText = "Fale com Especialista",
-  buttonHref = "#"
 }: Props) {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4">{mainTitle}</h2>
-        <p className="text-xl text-center mb-12">
-          {subtitle.split(" ").map((word, index) => (
-            <span key={index} className={word === "Leadfy" ? `text-[${highlightColor}]` : ""}>
-              {word}{" "}
-            </span>
-          ))}
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {features.map((feature, index) => (
-            <div key={index} className="bg-gray-900 p-6 rounded-lg">
-              <img src={feature.icon} alt={feature.title} className="w-12 h-12 mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
-              <div className="w-12 h-1 bg-[#c6f551] mb-4"></div>
-              <p className="text-gray-300">{feature.description}</p>
-            </div>
-          ))}
+    <div class="bg-white">
+      <header class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <img src={logo} alt="Leadfy Logo" class="h-8" />
+        <nav>
+          <ul class="flex space-x-6" dangerouslySetInnerHTML={{ __html: navItems }}></ul>
+        </nav>
+      </header>
+
+      <main class="container mx-auto px-4 py-16">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <div class="lg:w-1/2 mb-8 lg:mb-0">
+            <h1 class="text-4xl font-bold mb-6" dangerouslySetInnerHTML={{ __html: mainTitle }}></h1>
+            <p class="text-xl mb-8">{subtitle}</p>
+            <a href={buttonUrl} class="bg-yellow-300 text-black font-semibold py-3 px-8 rounded-full inline-block hover:bg-yellow-400 transition-colors">
+              {buttonText}
+            </a>
+          </div>
+          <div class="lg:w-1/2">
+            <img src={infinityLoopImage} alt="Infinity Loop" class="w-full" />
+          </div>
         </div>
-        <div className="text-center">
-          <a href={buttonHref} className="btn bg-[#c6f551] text-black hover:bg-[#b3e048] border-none px-8 py-3 text-lg font-semibold inline-block">
-            {buttonText}
-          </a>
+      </main>
+
+      <footer class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+          <p class="text-center text-gray-600 mb-8">{trustMessage}</p>
+          <div class="flex justify-center items-center space-x-8 flex-wrap">
+            {partnerLogos.map((logo, index) => (
+              <img key={index} src={logo} alt={`Partner Logo ${index + 1}`} class="h-12 object-contain" />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
   );
 }

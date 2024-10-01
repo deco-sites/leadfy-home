@@ -50,7 +50,15 @@
         "logo5": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/349ce1d4-488f-44e6-bd62-7ff1c71b632f/baixados-(3).jpeg",
         "logo6": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/1af0ea70-b3a1-4957-87e5-e67d53ac3a0c/images-(2).png",
         "dashboardImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/45850fbb-c575-4505-9303-ea1e4bda3cb4/Captura-de-tela-2024-10-01-152951.png",
-        "trustText": "Grandes marcas que confiam na nossa Tecnologia"
+        "trustText": "Grandes marcas que confiam na nossa Tecnologia",
+        "brandLogos": [
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/6b9c80f1-fef1-49be-ae45-70b77022b387/images-(2).png",
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/66cd07d4-3116-4db6-9424-ecd8145c7681/baixados-(3).jpeg",
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/82fb7629-e18f-4a2b-8e0b-d30c652274e1/banco-brb-1.svg",
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/91ad45b6-2336-415e-8133-0f7399e86215/baixados-(4).png",
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/6db71b9b-def4-4cff-857e-9e6f3bc5ed7f/Logo-Gradiente.png",
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/b797e19e-6553-4f06-9ea6-27d2419d6d58/images-(1).png"
+        ]
       }
     },
     {
