@@ -37,9 +37,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/hero-leadfy.tsx",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/e0616e9c-f18b-4c72-bc0a-1a85a6e601b7/Captura-de-tela-2024-10-01-152951.png",
         "buttonHref": "https://wa.me/5561982214588",
         "buttonText": "Faça um teste grátis",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/e0616e9c-f18b-4c72-bc0a-1a85a6e601b7/Captura-de-tela-2024-10-01-152951.png",
         "highlightColor": "#a40a0a",
         "subtitle": "Turbinamos seu negócio atraindo e atendendo leads qualificados todo dia, toda hora",
         "title": "<p>Nós trazemos os clientes, <u>você fecha mais vendas</u></p>",
@@ -64,6 +64,43 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/features-leadfy.tsx",
+        "buttonHref": "https://wa.me/5561982214588",
+        "buttonText": "Fale com Especialista",
+        "features": [
+          {
+            "title": "Economize tempo e trabalho",
+            "description": "Atualizamos seus anúncios com seu estoque em tempo real",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/38af45ae-5416-4e55-b818-1e2a860fef7b/clock.png"
+          },
+          {
+            "title": "Otimize seus resultados",
+            "description": "Melhoramos a performance das suas campanhas de aquisição e remarketing",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/6c168644-eade-42c6-814f-f37bca1292dc/filter-add.png"
+          },
+          {
+            "title": "Seja mais competitivo",
+            "description": "Traga as estratégias dos grandes portais para o site do seu negócio",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/1e6eaf20-f904-44ff-8ffe-4ec42d48f5f6/cup.png"
+          },
+          {
+            "title": "Venda fora do horário comercial",
+            "description": "Nosso módulo de atendimento 24×7 não deixa você perder nenhum cliente",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/5543d561-ec28-40fd-8e4d-cce4ff4cbcd5/message-add.png"
+          }
+        ],
+        "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/45850fbb-c575-4505-9303-ea1e4bda3cb4/Captura-de-tela-2024-10-01-152951.png",
+        "infinityLoopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/d93298bb-ac52-4fc3-ba26-0fcdb08d662f/Captura-de-tela-2024-10-01-170126.png",
+        "partnerLogos": [
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/1e656c1b-8311-4039-ac2e-3f9bd9115125/ADXhHGrsXLnaYJQPxu740ft0foCCfijO8cEkxPin.jpeg",
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/7c3c932d-c0fb-490b-bf71-fd5f85b42d2d/logotipometabusiness-1.webp",
+          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/6ac5f8c2-4758-455a-9fca-382e1682b9cb/TikTok-partner-ConversImagem.png"
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/image-with-paragraph.tsx",
         "description": "Você não precisa tricar de ferramenta ou integrador. Nós fazemos o trabalho pesado e entregamos leads quentinhos no seu site, CRM e Whatsapp",
         "title": "A Leadfy se integra às soluções mais usadas no mercado.",
@@ -76,7 +113,9 @@
         ],
         "backgroundColor": "#ffffff",
         "ctaText": "Teste Grátis",
-        "ctaHref": "/"
+        "ctaHref": "/",
+        "ctaBackgroundColor": "#daff01",
+        "ctaTextColor": "1b1b1b"
       }
     },
     {
@@ -108,43 +147,6 @@
             "company": "Garage 88",
             "testimonial": "“A Leadfy trouxe 1000 leads qualificados em um ano, aumentando nossas vendas online entre 30% e 40%. Hoje, 55% do nosso faturamento vem do digital e vamos aumentar nossa aposta.”"
           }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/features-leadfy.tsx",
-        "buttonText": "Fale com Especialista",
-        "features": [
-          {
-            "title": "Economize tempo e trabalho",
-            "description": "Atualizamos seus anúncios com seu estoque em tempo real",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/38af45ae-5416-4e55-b818-1e2a860fef7b/clock.png"
-          },
-          {
-            "title": "Otimize seus resultados",
-            "description": "Melhoramos a performance das suas campanhas de aquisição e remarketing",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/6c168644-eade-42c6-814f-f37bca1292dc/filter-add.png"
-          },
-          {
-            "title": "Seja mais competitivo",
-            "description": "Traga as estratégias dos grandes portais para o site do seu negócio",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/1e6eaf20-f904-44ff-8ffe-4ec42d48f5f6/cup.png"
-          },
-          {
-            "title": "Venda fora do horário comercial",
-            "description": "Nosso módulo de atendimento 24×7 não deixa você perder nenhum cliente",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-sell/5543d561-ec28-40fd-8e4d-cce4ff4cbcd5/message-add.png"
-          }
-        ],
-        "buttonHref": "https://wa.me/5561982214588",
-        "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/45850fbb-c575-4505-9303-ea1e4bda3cb4/Captura-de-tela-2024-10-01-152951.png",
-        "infinityLoopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/d93298bb-ac52-4fc3-ba26-0fcdb08d662f/Captura-de-tela-2024-10-01-170126.png",
-        "partnerLogos": [
-          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/1e656c1b-8311-4039-ac2e-3f9bd9115125/ADXhHGrsXLnaYJQPxu740ft0foCCfijO8cEkxPin.jpeg",
-          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/7c3c932d-c0fb-490b-bf71-fd5f85b42d2d/logotipometabusiness-1.webp",
-          "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/6ac5f8c2-4758-455a-9fca-382e1682b9cb/TikTok-partner-ConversImagem.png"
         ]
       }
     },
