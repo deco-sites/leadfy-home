@@ -1,0 +1,11 @@
+{
+  "name": "collections/blog/authors/ef8376b8daf4",
+  "__resolveType": "blog/loaders/Author.ts",
+  "author": {
+    "name": "Yuri Gitahy",
+    "email": "yuri@leadfy.me",
+    "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/c46c51b8-56e2-437a-a616-5ebedc08c930/Captura-de-tela-2024-10-01-172456.png",
+    "company": "Leadfy",
+    "jobTitle": "CEO"
+  }
+}

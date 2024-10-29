@@ -223,32 +223,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/blog.tsx",
-        "posts": [
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/ebd28e3d-d6cf-47a4-856c-b52695f56607/blogLeadfy-Blog-VendaOnline-20240927-1536x864.jpg",
-            "date": "01/10/2024",
-            "title": "Venda de Veículos: quais são as tendências em 2024",
-            "description": "O mercado automotivo está mudando rápido. Quer saber como as plataformas digitais estão revolucionando a compra e venda de veículos? Descubra como a tecnologia pode transformar a forma como você gerencia seu negócio!"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/ebd28e3d-d6cf-47a4-856c-b52695f56607/blogLeadfy-Blog-VendaOnline-20240927-1536x864.jpg",
-            "date": "01/10/2024",
-            "title": "Venda de Veículos: quais são as tendências em 2024",
-            "description": "O mercado automotivo está mudando rápido. Quer saber como as plataformas digitais estão revolucionando a compra e venda de veículos? Descubra como a tecnologia pode transformar a forma como você gerencia seu negócio!"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/ebd28e3d-d6cf-47a4-856c-b52695f56607/blogLeadfy-Blog-VendaOnline-20240927-1536x864.jpg",
-            "date": "01/10/2024",
-            "title": "Venda de Veículos: quais são as tendências em 2024",
-            "description": "O mercado automotivo está mudando rápido. Quer saber como as plataformas digitais estão revolucionando a compra e venda de veículos? Descubra como a tecnologia pode transformar a forma como você gerencia seu negócio!"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Footer.tsx",
         "href": "/",
         "text": "© 2024. Leadfy. Todos os Direitos Reservados.",
