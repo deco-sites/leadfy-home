@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/a227159437ee",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Cat 1",
+    "slug": "cat-1"
+  }
+}
