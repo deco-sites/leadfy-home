@@ -104,24 +104,11 @@
       "section": {
         "__resolveType": "blog/sections/Seo/SeoBlogPostListing.tsx",
         "jsonLD": {
-          "posts": [
-            {
-              "__resolveType": "collections/blog/posts/3dedc0d3a0ec"
-            },
-            {
-              "__resolveType": "collections/blog/posts/3dedc0d3a0ec"
-            },
-            {
-              "__resolveType": "collections/blog/posts/3dedc0d3a0ec"
-            }
-          ],
-          "seo": {
-            "title": "Blog"
-          },
-          "pageInfo": {
-            "currentPage": 1,
-            "nextPage": "2",
-            "previousPage": "1"
+          "__resolveType": "blog/loaders/BlogpostListing.ts",
+          "sortBy": "date_asc",
+          "slug": {
+            "__resolveType": "website/functions/requestToParam.ts",
+            "param": "slug"
           }
         },
         "title": "Blog"
