@@ -122,12 +122,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "blog/sections/Seo/SeoBlogPostListing.tsx"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/features-leadfy.tsx",
         "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/45850fbb-c575-4505-9303-ea1e4bda3cb4/Captura-de-tela-2024-10-01-152951.png",
         "features": [
@@ -236,6 +230,19 @@
         "alt": "GarageCar Veiculos",
         "width": 64,
         "height": 64
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "blog/sections/Seo/SeoBlogPostListing.tsx",
+        "jsonLD": {
+          "posts": [
+            {
+              "__resolveType": "collections/blog/posts/3dedc0d3a0ec"
+            }
+          ]
+        }
       }
     }
   ],
