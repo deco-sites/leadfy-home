@@ -102,6 +102,34 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "blog/sections/Seo/SeoBlogPostListing.tsx",
+        "jsonLD": {
+          "posts": [
+            {
+              "__resolveType": "collections/blog/posts/3dedc0d3a0ec"
+            },
+            {
+              "__resolveType": "collections/blog/posts/3dedc0d3a0ec"
+            },
+            {
+              "__resolveType": "collections/blog/posts/3dedc0d3a0ec"
+            }
+          ],
+          "seo": {
+            "title": "Blog"
+          },
+          "pageInfo": {
+            "currentPage": 1,
+            "nextPage": "2",
+            "previousPage": "1"
+          }
+        },
+        "title": "Blog"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/image-with-paragraph.tsx",
         "backgroundColor": "#ffffff",
         "description": "Você não precisa tricar de ferramenta ou integrador. Nós fazemos o trabalho pesado e entregamos leads quentinhos no seu site, CRM e Whatsapp",
@@ -230,19 +258,6 @@
         "alt": "GarageCar Veiculos",
         "width": 64,
         "height": 64
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "blog/sections/Seo/SeoBlogPostListing.tsx",
-        "jsonLD": {
-          "posts": [
-            {
-              "__resolveType": "collections/blog/posts/3dedc0d3a0ec"
-            }
-          ]
-        }
       }
     }
   ],
