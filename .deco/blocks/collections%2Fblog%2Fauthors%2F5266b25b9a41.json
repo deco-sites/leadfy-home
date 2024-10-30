@@ -1,0 +1,11 @@
+{
+  "name": "collections/blog/authors/5266b25b9a41",
+  "__resolveType": "blog/loaders/Author.ts",
+  "author": {
+    "name": "André Perotto",
+    "email": "andre@leadfy.me",
+    "jobTitle": "Head of Products",
+    "company": "Leadfy",
+    "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/leadfy-home/3025b8c0-6e15-4975-9ee2-17e2ff2a7996/Avatar-Leadfy_andre_new_1.png"
+  }
+}
