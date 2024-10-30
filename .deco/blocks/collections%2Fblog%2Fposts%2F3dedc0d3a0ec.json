@@ -1,7 +1,0 @@
-{
-  "name": "collections/blog/posts/3dedc0d3a0ec",
-  "__resolveType": "blog/loaders/Blogpost.ts",
-  "post": {
-    "__resolveType": "collections/blog/posts/d309c1b923a7"
-  }
-}
